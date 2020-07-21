@@ -12,6 +12,41 @@ int main()
     int arreglo[100];
     int n;
     cout<<"INGRESE EL TAMANIO:";
+    cin>>n;
+    ingresar(arreglo,n);
+    cout<<endl;
+    imprimir(arreglo,n);
+    cout<<endl;
+    burbuja(arreglo,n);
+    cout<<endl;
+    imprimir(arreglo,n);
+
+    return 0;
+}
+
+
+void ingresar(int a[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        cout<<"Ingrese el elemeneto al arreglo:"<<endl;
+        cin>>a[i];
+    }
+
+}
+
+void imprimir(int a[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i];
+    }
+}
+
+
+
 void burbuja(int a[],int n)
 {
     int i,j,aux;
